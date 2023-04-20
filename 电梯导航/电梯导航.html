@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jQuery.min.js"></script>
+    <script src="电梯导航.js"></script>
+</head>
+<style>
+    .slider-bar-right {
+        position: absolute;
+        left: 50%;
+        top: 328px;
+        margin-left: 600px;
+        width: 45px;
+        height: 130px;
+        background-color: pink;
+        display: none;
+    }
+    .slider-bar-left{
+        position: fixed;
+        top: 300px;
+        margin-left:102px ;
+        width:50px;
+        display: flex;
+        flex-direction: column;
+        background-color: aqua;
+        display:none;
+    }
+    .slider-bar-left li{
+        height: 50px;
+        flex-grow: 1;
+        display: block;
+        line-height: 50px;
+        text-align: center;
+        list-style: none; 
+        border-bottom :1px solid black;
+        width: 100%;
+        font-size: 8px;
+        cursor: pointer;
+
+    }
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 24px;
+        border-top:3px solid #E2231A ;
+    }
+    .bar{
+    font-size: 16px;
+    color: #E2231A;
+    font-weight: 700;
+    width: 1200px;
+    margin: 0 auto;
+   
+    }
+   .head{
+    height: 250px;
+    background-color:bisque;
+   }
+    .header {
+        height: 150px;
+        background-color:rgb(23, 149, 155);
+    }
+    
+    .banner {
+        height: 250px;
+        background-color: skyblue;
+    }
+    
+    .main {
+        height: 1200px;
+        background-color: yellowgreen;
+    }
+    .footer{
+        height: 100px;
+        background-color: rgb(225, 179, 118);
+    }
+    span {
+        display:none;
+        position: absolute;
+        bottom: 0;
+        cursor:pointer;
+
+    }
+</style>
+</head>
+<body>
+<div class="slider-bar-right">
+    <span class="goBack">返回顶部</span>
+</div>
+<div class="slider-bar-left">
+        <li>首页</li>
+        <li>头部区域</li>
+        <li>banner</li>
+        <li>主体部分</li>
+        <li>footer</li>
+</div>
+<div class="bar"><em>首页</em></div>
+<div class="head w">首页</div>
+<div class="bar"><em>头部区域</em></div>
+<div class="header w">头部区域</div>
+<div class="bar"><em>banner区域</em></div>
+<div class="banner w">banner区域</div>
+<div class="bar"><em>主体部分</em></div>
+<div class="main w">主体部分</div>
+<div class="bar"><em>footer部分</em></div>
+<div class="footer w">footer部分</div>
+</body>
+</html>
